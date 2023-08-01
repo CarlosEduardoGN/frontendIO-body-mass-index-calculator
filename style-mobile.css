@@ -321,6 +321,7 @@ label span{
     position: absolute;
     top: 20px;
     left: 24px;
+    width: 131px;
     color: var(--gunmetal);
     /* Heading M */
     font-family: "Inter";
@@ -455,8 +456,8 @@ label span{
 .crazyline{
     display: none;
     position: absolute;
-    top: 749px;
-    right: 167px;
+    top: 0px;
+    right: 0px;
 }
 .result1{
     position: absolute;
@@ -652,8 +653,8 @@ label span{
 .crazyline2{
     display: none;
     position: absolute;
-    bottom: 451px;
-    left: 305px;
+    bottom: 0px;
+    left: 0px;
 }
 ::placeholder,  :-ms-input-placeholder, ::-ms-input-placeholder  {
     color: var(--gunmetal, #253347);
