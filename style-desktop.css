@@ -1,0 +1,720 @@
+:root{
+    --pure-white: #FFF;
+    --gradient-1: linear-gradient(315deg, #D6E6FE 0%, rgba(214, 252, 254, 0.00) 100%);
+    --dark-electric-blue: #5E6E85;
+    --gunmetal: #253347;
+    --color1: #f4f4f4;
+    --color2: #3197EE;
+    --blue: #345FF6;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/static/Inter-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/static/Inter-SemiBold.ttf) format(truetype);
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+body{
+    display:flex;
+    justify-content: center;
+}
+main{
+    position: absolute;
+    width: 1440px;
+    height: 2776px;
+    background: var(--pure-white);
+}
+.upperrect{
+    position: absolute;
+    top: 0px;
+    left: 24px;
+    width: 978px;
+    height: 737px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 35px 35px;
+    background: var(--gradient-1);
+}
+.logo{
+    position: absolute;
+    top: 75px;
+    left: 116px;
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+}
+.recttitle{
+    position: absolute;
+    top: 266px;
+    left: 116px;
+    width: 564px;
+    height: 140px;
+    color: var(--gunmetal);
+    align-self: stretch;
+    /* Heading XL */
+    font-family: "Inter";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 70.4px */
+    letter-spacing: -3.2px;
+}
+.recttext{
+    position: absolute;
+    top: 441px;
+    left: 116px;
+    width: 465px;
+    color: var(--dark-electric-blue);
+    /* Body M */
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+.hidden{
+    display: none;
+}
+.direita{
+
+}
+.rightrect1{
+    position: absolute;
+    top: 166px;
+    right: 140px;
+    width: 564px;
+    height: 484px;
+    border-radius: 16px;
+    background: var(--pure-white);
+    box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+}
+.rightrect2{
+    position: absolute;
+    top: 167px;
+    right: 140px;
+    width: 564px;
+    height: 606px;
+    border-radius: 16px;
+    background: var(--pure-white);
+    box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);   
+}
+.rightrecttitle2{
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    width: 253px;
+    height: 29px;
+    color: var(--gunmetal);
+    /* Heading M */
+    font-family: "Inter";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.2px;
+}
+.heighttitle2{
+    position: absolute;
+    top: 158px;
+    left: 32px;
+    color: #5E6E85;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+}
+.weighttitle2{
+    position: absolute;
+    top: 280px;
+    left: 32px;
+    color: #5E6E85;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+}
+.rectheight-ft{
+    position: absolute;
+    top: 187px;
+    left: 32px;
+    width: 238px;
+    height: 69px;
+    border-radius: 12px;
+    border: 1px solid #D8E2E7;
+    background: var(--pure-white);
+}
+.rectheight-in{
+    position: absolute;
+    top: 187px;
+    left: 294px;
+    width: 238px;
+    height: 69px;
+    border-radius: 12px;
+    border: 1px solid #D8E2E7;
+    background: var(--pure-white);
+}
+.rectweight-st{
+    position: absolute;
+    top: 309px;
+    left: 32px;
+    width: 238px;
+    height: 69px;
+    border-radius: 12px;
+    border: 1px solid #D8E2E7;
+    background: var(--pure-white);
+}
+.heightunit-ft, .heightunit-in, .weightunit-st, .weightunit-lbs{
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    color: var(--blue, #345FF6);
+    /* Heading M */
+    font-family: "Inter";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.2px;   
+}
+.rectweight-lbs{
+    position: absolute;
+    top: 309px;
+    left: 294px;
+    width: 238px;
+    height: 69px;
+    border-radius: 12px;
+    border: 1px solid #D8E2E7;
+    background: var(--pure-white);
+}
+#heightinput-ft,#heightinput-in, #weightinput-st, #weightinput-lbs{
+    all: unset;
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    color: var(--gunmetal);
+    /* Heading M */
+    font-family: "Inter";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.2px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+#radio1, #radio2{
+    cursor: pointer;
+}
+.rectheight:hover, .rectweight:hover{
+    cursor: pointer;
+    border: 1px solid var(--blue);
+}
+label#radio1{
+    position: absolute;
+    top: 260px;
+    left: 768px;
+}
+label#radio2{
+    position: absolute;
+    top: 260px;
+    left: 1030px;
+}
+label > input[type="radio"] {
+    display: none;
+}
+label > input[type="radio"] + *::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 31px;
+    height: 31px;
+    margin-right: 0.3rem;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #D8E2E7;
+
+}
+label > input[type="radio"]:checked + *::before {
+    background-image: url(assets/images/radiochecked.png);
+}
+  label > input[type="radio"]:checked + * {
+    color: var(--gunmetal);
+}
+label span{
+    display:flex;
+    align-items: center;
+    color: var(--gunmetal);
+    /* Body M (Bold) */
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+}
+.heighttitle{
+    position: absolute;
+    top: 156px;
+    left: 32px;
+    width: 44px;
+    height: 21px;
+    color: #5E6E85;
+    /* Body S */
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+}
+.weighttitle{
+    position: absolute;
+    top: 156px;
+    left: 294px;
+    width: 46px;
+    height: 21px;
+    color: #5E6E85;
+    /* Body S */
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+}
+.rectheight{
+    position: absolute;
+    top: 185px;
+    left: 32px;
+    width: 238px;
+    height: 69px;
+    border-radius: 12px;
+    border: 1px solid #D8E2E7;
+    background: var(--pure-white);
+}
+.rectweight{
+    position: absolute;
+    top: 185px;
+    left: 294px;
+    width: 238px;
+    height: 69px;
+    border-radius: 12px;
+    border: 1px solid #D8E2E7;
+    background: var(--pure-white);
+}
+#heightinput,#weightinput{
+    all: unset;
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    color: var(--gunmetal);
+    /* Heading M */
+    font-family: "Inter";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.2px;
+}
+.heightunit,.weightunit{
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    color: var(--blue, #345FF6);
+    /* Heading M */
+    font-family: "Inter";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.2px;
+}
+.bluerect1, .bluerect2{
+    position: absolute;
+    width: 500px;
+    border-radius: 16px 100px 100px 16px;
+    border-top-left-radius: 16px;
+    background: linear-gradient(90deg, #345FF6 0%, #587DFF 100%);
+}
+.bluerect1{
+    height: 166px;
+    bottom: 2158px;
+    right: 172px;
+}
+.bluerect2{
+    height: 130px;
+    bottom: 2179px;
+    right: 172px;
+}
+.bluerect1{
+    display: none;
+}
+.bluerect2{
+    display: block;
+}
+.bmi1{
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    width: 206px;
+    color: var(--pure-white);
+    /* Body M (Bold) */
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+}
+.bmi2{
+    position: absolute;
+    top: 41px;
+    left: 262px;
+    width: 206px;
+    height: 84px;
+    color: var(--pure-white);
+    /* Body S */
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+}
+.strong{
+    font-family: "Inter";
+    font-weight: bold;
+}
+.bmi3{
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    color: var(--pure-white, #FFF);
+    /* Heading XL */
+    font-family: "Inter";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 70.4px */
+    letter-spacing: -3.2px;
+}
+.welcome1{
+    top: 32px;
+    left: 32px;
+    position: absolute;
+    color: var(--pure-white);
+    font-family: "Inter";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.2px;
+}
+.welcome2{
+    width: 436px;
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    color: var(--pure-white);
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    
+}
+.middlerect{
+    position: absolute;
+    top: 946px;
+    left: 140px;
+    width: 564px;
+    height: 388px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    background: #E7F5FE;
+}
+.middlerect img{
+    position: absolute;
+    bottom: 0px;
+    left: 48px;
+}
+.crazyline{
+    position: absolute;
+    top: 749px;
+    right: 167px;
+}
+.result1{
+    position: absolute;
+    top: 985px;
+    right: 140px;
+    width: 465px;
+    height: 106px;
+    color: var(--gunmetal, #253347);
+    /* Heading L */
+    font-family: "Inter";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 52.8px */
+    letter-spacing: -2.4px;
+}
+.result2{
+    position: absolute;
+    top: 1126px;
+    right: 140px;
+    width: 465px;
+    height: 168px;
+    color: var(--dark-electric-blue);
+    /* Body M */
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+.bottomrect{
+    position: absolute;
+    top: 1430px;
+    left: 24px;
+    width: 1392px;
+    height: 402px;
+    flex-shrink: 0;
+    border-radius: 35px;
+    opacity: 0.25;
+    background: var(--gradient-1, linear-gradient(315deg, #D6E6FE 0%, rgba(214, 252, 254, 0.00) 100%));
+}
+.icon1{
+    position: absolute;
+    top: 1502px;
+    left: 140px;
+}
+.icon2{
+    position: absolute;
+    top: 1502px;
+    left: 537px;
+}
+.icon3{
+    position: absolute;
+    top: 1502px;
+    left: 934px;    
+}
+.title1, .title2, .title3{
+    position: absolute;
+    top: 1611px;
+    color: var(--gunmetal);
+    /* Heading M */
+    font-family: "Inter";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.2px;
+}
+.title1{
+    left: 140px;
+}
+.title2{
+    left: 537px;
+}
+.title3{
+    left: 934px;  
+}
+.text1,.text2,.text3{
+    position: absolute;
+    top: 1664px;
+    color: var(--dark-electric-blue);
+    width: 365px;
+    height: 72px;
+    /* Body M */
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+.text1{
+    left: 140px;
+}
+.text2{
+    left: 537px;
+}
+.text3{
+    left: 934px; 
+}
+.limitationstitle{
+    position: absolute;
+    top: 1952px;
+    left: 140px;
+    color: var(--gunmetal);
+    /* Heading L */
+    font-family: "Inter";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 52.8px */
+    letter-spacing: -2.4px;
+}
+.limitationstext{
+    position: absolute;
+    top: 2040px;
+    left: 140px;
+    width: 564px;
+    height: 96px;
+    color: var(--dark-electric-blue, #5E6E85);
+    /* Body M */
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+.box1, .box2, .box3, .box4, .box5{
+    position: absolute;
+    display: flex;
+    width: 365px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 16px;
+    background: var(--pure-white);
+    box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+}
+.box1{
+    top: 1952px;
+    right: 239px;
+    height: 232px;
+}
+.box2{
+    top: 2216px;
+    left: 538px;
+    height: 184px;
+}
+.box3{
+    top: 2216px;
+    right: 140px;
+    height: 184px;
+}
+.box4{
+    top: 2424px;
+    left: 339px;
+    height: 232px;
+}
+.box5{
+    top: 2424px;
+    right: 339px;
+    height: 232px;
+}
+.box1 svg, .box2 svg, .box3 svg, .box4 svg, .box5 svg{
+    position: relative;
+    width: 32px;
+    height: 32px;
+    top: 32px;
+    left: 32px;
+}
+.box1title, .box2title, .box3title, .box4title, .box5title{
+    position: absolute;
+    top: 36px;
+    left: 80px;
+    color: var(--gunmetal);
+    /* Heading S */
+    font-family: "Inter";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1px;
+}
+.box1text, .box2text, .box3text, .box4text, .box5text{
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    width: 301px;
+    color: var(--dark-electric-blue);
+    /* Body M */
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+.crazyline2{
+    position: absolute;
+    bottom: 451px;
+    left: 305px;
+}
+::placeholder,  :-ms-input-placeholder, ::-ms-input-placeholder  {
+    color: var(--gunmetal, #253347);
+    /* Heading M */
+    font-family: "Inter";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.2px;
+    opacity: 0.25;
+  }
+
+
+
+
+
+
+
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
