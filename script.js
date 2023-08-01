@@ -7,7 +7,8 @@ function load(){
     }else if (document.getElementById('r2').checked){
         activeradio = document.getElementById("r2").value
     }
-    const viewport_width = window.innerWidth;
+    const viewport_width = page.screen.width;
+    console.log(viewport_width,viewport_width2)
     if (activeradio == 'imperial'){
         document.getElementById("rightrect1").classList.add("hidden");
         document.getElementById("rightrect2").classList.remove("hidden");
@@ -15,7 +16,7 @@ function load(){
             document.getElementById("bluerect1").style.top= '575px';
             document.getElementById("bluerect2").style.top= '596px';
             console.log(activeradio,viewport_width)
-        }else if (viewport_width<=768&&viewport_width>375){
+        }else if (viewport_width<=768&&viewport_width>420){
             console.log('aqui')
              document.getElementById("bluerect1").style.top= '770px';
             document.getElementById("bluerect2").style.top= '780px';
@@ -29,7 +30,7 @@ function load(){
         if (viewport_width > 768){
         document.getElementById("bluerect1").style.top= '452px';
         document.getElementById("bluerect2").style.top= '467px';
-        }else if (viewport_width<=768&&viewport_width>375){
+        }else if (viewport_width<=768&&viewport_width>420){
             document.getElementById("bluerect1").style.top= '640px';
             document.getElementById("bluerect2").style.top= '650px';
         }else{
